@@ -5,7 +5,6 @@ html,body{
 }
 
 .content-wrap {
-  max-width: 100%
   min-height: 100%;
   margin-bottom: -50px;
   display: flex;
@@ -75,6 +74,7 @@ section {
     padding: 30px 60px;
     background-color: #f4f4f4;
     margin-right: 20px;
+    width-max: 36%;
 }
 
 footer {
