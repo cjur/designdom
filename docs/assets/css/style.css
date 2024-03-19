@@ -5,6 +5,7 @@ html,body{
 }
 
 .content-wrap {
+  max-width: 100%
   min-height: 100%;
   margin-bottom: -50px;
   display: flex;
