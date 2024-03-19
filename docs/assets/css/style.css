@@ -1,18 +1,22 @@
+/* Stylesheet-Designdon */
 html,body{
     height: 100%;
     margin:0;
 }
+
 .content-wrap {
   min-height: 100%;
   margin-bottom: -50px;
   display: flex;
   flex-direction: column;
 }
+
 .content-wrap:after {
   content: "";
   display: block;
   height: 50px;
 }
+
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0;
