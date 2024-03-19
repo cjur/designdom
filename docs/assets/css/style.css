@@ -2,12 +2,12 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #33334d;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background-color: #33334d;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -24,12 +24,12 @@ h1, h2 {
 section {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fffff;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #33334d;
+    color: #fffff;
     text-align: center;
     padding: 10px 0;
     position: absolute;
