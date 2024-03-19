@@ -19,8 +19,6 @@ html,body{
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
     color: #1a1a1a;
     background-color: #ffffff;
 }
@@ -83,6 +81,5 @@ footer {
     height: 50px;
     color: #f4f4f4;
     text-align: center;
-    padding: 10px 0;
     width: 100%;
 }
