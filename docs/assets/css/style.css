@@ -15,6 +15,7 @@ html,body{
   content: "";
   display: block;
   height: 50px;
+  width: 100%;
 }
 
 body {
@@ -81,5 +82,4 @@ footer {
     height: 50px;
     color: #f4f4f4;
     text-align: center;
-    width: 100%;
 }
