@@ -33,6 +33,7 @@ header {
     padding: 30px 60px;
     display: flex;
     justify-content: right;
+    width: 100%;
 }
 
 .brand-container {
@@ -83,4 +84,5 @@ footer {
     color: #f4f4f4;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
 }
