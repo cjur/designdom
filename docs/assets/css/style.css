@@ -24,7 +24,6 @@ body {
     padding: 0;
     color: #1a1a1a;
     background-color: #ffffff;
-    min-width: 90%;
 }
 
 header {
@@ -60,6 +59,7 @@ header {
 
 main {
     padding: 0px;
+    width: 100%;
 }
 
 h1, h2, h3 {
