@@ -1,3 +1,19 @@
+html,body{
+    height: 100%;
+    margin:0;
+}
+.content-wrap {
+  min-height: 100%;
+  /* Reserve the exact height of the footer */
+  margin-bottom: -50px; /* Negative value of footer height */
+  display: flex;
+  flex-direction: column;
+}
+.content-wrap:after {
+  content: "";
+  display: block;
+  height: 50px; /* Height of the footer */
+}
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0;
@@ -51,6 +67,7 @@ section {
 
 footer {
     background: linear-gradient(-80deg,#de498e,  #27a5cc 2%, #59255b 5%, #1a1a1a 50%);
+    height: 50px;
     color: #f4f4f4;
     text-align: center;
     padding: 10px 0;
