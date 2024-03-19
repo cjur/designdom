@@ -26,25 +26,25 @@ header {
     color: #f4f4f4;
     padding: 30px 60px;
     display: flex;
-    justify-content: right; /* Centers the brand-container horizontally */
+    justify-content: right;
 }
 
 .brand-container {
     display: flex;
-    align-items: center; /* Aligns the logo and wordmark vertically */
+    align-items: center;
     justify-content: center;
 }
 
 
 .logo {
-    height: 50px; /* Example size, adjust as needed */
+    height: 50px;
     width: auto; 
     display: block;
 }
 
 .wordmark {
-    height: 20px; /* Adjust the size to match the logo's central height */
-    margin-right: 50px; /* Adds space between the logo and wordmark */
+    height: 20px;
+    margin-right: 50px;
     width: auto;
     display: block;
 
