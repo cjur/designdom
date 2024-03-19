@@ -69,7 +69,6 @@ h1, h2, h3 {
 .sectionupper{
     display: flex;
     flex-direction: row;
-    padding: 20px;
 }
 
 section {
