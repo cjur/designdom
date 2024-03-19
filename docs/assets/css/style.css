@@ -4,15 +4,14 @@ html,body{
 }
 .content-wrap {
   min-height: 100%;
-  /* Reserve the exact height of the footer */
-  margin-bottom: -50px; /* Negative value of footer height */
+  margin-bottom: -50px;
   display: flex;
   flex-direction: column;
 }
 .content-wrap:after {
   content: "";
   display: block;
-  height: 50px; /* Height of the footer */
+  height: 50px;
 }
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -71,7 +70,4 @@ footer {
     color: #f4f4f4;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
