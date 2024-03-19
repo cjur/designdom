@@ -19,6 +19,7 @@ body {
     padding: 0;
     color: #1a1a1a;
     background-color: #ffffff;
+    min-width: 90%;
 }
 
 header {
@@ -51,17 +52,23 @@ header {
 }
 
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-section {
-    margin-bottom: 20px;
+.sectionupper{
+    display: flex;
+    flex-direction: row;
     padding: 20px;
+}
+
+section {
+    padding: 30px 60px;
     background-color: #f4f4f4;
+    margin-right: 20px;
 }
 
 footer {
