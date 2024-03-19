@@ -2,15 +2,37 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #33334d;
-    background-color: #f4f4f4;
+    color: #1a1a1a;
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #33334d;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background: linear-gradient(-80deg,#de498e,  #27a5cc 2%, #59255b 5%, #1a1a1a 50%);
+    color: #f4f4f4;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: right; /* Centers the brand-container horizontally */
+}
+
+.brand-container {
+    display: flex;
+    align-items: center; /* Aligns the logo and wordmark vertically */
+    justify-content: center;
+}
+
+
+.logo {
+    height: 50px; /* Example size, adjust as needed */
+    width: auto; 
+    display: block;
+}
+
+.wordmark {
+    height: 20px; /* Adjust the size to match the logo's central height */
+    margin-right: 50px; /* Adds space between the logo and wordmark */
+    width: auto;
+    display: block;
+
 }
 
 main {
@@ -24,12 +46,12 @@ h1, h2 {
 section {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fffff;
+    background-color: #f4f4f4;
 }
 
 footer {
-    background-color: #33334d;
-    color: #fffff;
+    background: linear-gradient(-80deg,#de498e,  #27a5cc 2%, #59255b 5%, #1a1a1a 50%);
+    color: #f4f4f4;
     text-align: center;
     padding: 10px 0;
     position: absolute;
