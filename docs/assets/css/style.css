@@ -20,8 +20,7 @@ html,body{
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: #1a1a1a;
-    box-shadow: inset 0 0 200px rgba(149, 178, 189, 0.548);
-    background-color: #ffffff;
+    background-color: #97b5be3a;
 }
 
 header {
@@ -65,16 +64,23 @@ h2 {
     text-transform: uppercase;
     letter-spacing: -2px;
     kerning: normal;
+    font-weight:bolder;
+    background: #ffffff47;
+    padding: 20px;
+    border-radius: 15px;
+    transition-timing-function: all:ease 3s;
 }
 
 h1, h2, h3 {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-style: bold;
 }
 
+h3{
+    font-weight: normal;
+}
 section {
     padding: 30px 30px;
-    background: linear-gradient(65deg, #ffffff 50%, #abc8d18c 120%);
+    background: linear-gradient(65deg, #ffffff 50%, #9bcfdf80 75%, #f966aa87 85%, #9bcfdf94 100%);
     margin-bottom: 30px;
     border-radius: 20px;
 }
