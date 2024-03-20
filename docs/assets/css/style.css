@@ -1,7 +1,7 @@
 /* Stylesheet-Designdon */
 html,body{
     height: 100%;
-    margin:0;
+    margin: 0;
 }
 
 .content-wrap {
@@ -29,7 +29,8 @@ header {
     padding: 30px 60px;
     display: flex;
     justify-content: right;
-    width: 100%;
+    cursor: pointer;
+    position: relative;
 }
 
 .brand-container {
@@ -48,8 +49,8 @@ header {
 
 .wordmark {
     height: 20px;
-    margin-right: 50px;
     width: auto;
+    margin-right: 30px;
     display: block;
 
 }
@@ -63,16 +64,16 @@ h1, h2, h3 {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-.sectionupper{
-    display: flex;
-    flex-direction: row;
-    padding:20px 20px;
+section {
+    padding: 30px 30px;
+    background-color: #f4f4f4;
+    margin-bottom: 30px;
 }
 
-section {
-    padding: 30px 60px;
-    background-color: #f4f4f4;
-    margin-right: 20px;
+.grid{
+    padding:30px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -81,4 +82,29 @@ footer {
     color: #f4f4f4;
     text-align: center;
     padding: 20px 0px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ffffff;
+}
+
+.show {
+    display: block;
 }

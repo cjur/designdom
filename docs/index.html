@@ -10,18 +10,46 @@
 
 
 <body>
+    <main>
+
     <div class="content-wrap">
 
-    <header>
+    <header onclick="toggleDropdown()">
+        
+        <div class="dropdown" id="dropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+
         <div class="brand-container">
             <img src="assets/images/wordmark.svg" alt="DesignDom Wordmark" class="wordmark">
             <img src="assets/images/logo.svg" alt="DesignDom Logo" class="logo">
         </div>
     </header>
 
-    <main>
-        <div class="sectionupper">
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("show");
+        }
 
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.closest('header')) {
+                var dropdown = document.getElementById("dropdown");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+    <div class="grid">
         <section>
             <h2>About Us</h2>
             <p>We aim to provide a large collection of free assets and materials for designers.</p>
@@ -40,13 +68,13 @@
             <p>Logo design & Brand Inspiration</p>
             <li><a href=https://www.underconsideration.com/ target="_blank">Underconsideration</a></li>
             <li><a href=https://www.logopond.com/ target="_blank">Logopond</a></li>
-            https://brandingstyleguides.com/
+            <li><a href=https://brandingstyleguides.com/ target="_blank">brandingstyleguides</a></li>
             <p>For Mockups</p>
             <li><a href=https://www.mockupworld.co/ target="_blank">Mockupworld</a></li>
         </section>
 
-        </div>
-    </div><!--Content Wrap, All content above this div--> 
+    </div> <!--Grid-->
+    </div> <!--Content Wrap-->
     
     </main>
 
