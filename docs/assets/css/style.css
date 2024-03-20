@@ -31,6 +31,7 @@ header {
     justify-content: right;
     cursor: pointer;
     position: relative;
+    box-shadow: 0px 0px 100px #27a5cca1;
 }
 
 .brand-container {
@@ -65,10 +66,7 @@ h2 {
     letter-spacing: -2px;
     kerning: normal;
     font-weight:bolder;
-    background: #ffffff47;
-    padding: 20px;
-    border-radius: 15px;
-    transition-timing-function: all:ease 3s;
+    margin-bottom: 30px;
 }
 
 h1, h2, h3 {
@@ -82,7 +80,8 @@ section {
     padding: 30px 30px;
     background: linear-gradient(65deg, #ffffff 50%, #9bcfdf80 75%, #f966aa87 85%, #9bcfdf94 100%);
     margin-bottom: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px #ffffff
 }
 
 .grid{
@@ -97,10 +96,12 @@ footer {
     color: #f4f4f4;
     text-align: center;
     padding: 20px 0px;
+    box-shadow: 0px 0px 100px #27a5cca1;
 }
 
 a:link, a:visited{
     color: #de498e;
+    text-decoration: none;
 }
 
 a:hover, a:active{
