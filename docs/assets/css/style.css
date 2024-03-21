@@ -110,7 +110,7 @@ h3{
     border-bottom: solid 6px #57d8ff8e;
 }
 section {
-    padding: 30px 30px;
+    padding: 10px 30px 30px 30px;
     background: linear-gradient(65deg, #ffffff 50%, #c6f2ff 75%, #ffbddc 85%, hsl(194, 100%, 89%) 95%, #ffffff 100%);
     margin-bottom: 30px;
     border-radius: 10px;
