@@ -32,7 +32,7 @@ header {
     justify-content: right;
     cursor: pointer;
     position: relative;
-    box-shadow: 0px 0px 100px #27a5cca1;
+    box-shadow: 0px 0px 100px #27a5cca1, inset 0 0 20px #1a1a1a83;
 }
 
 footer {
@@ -41,7 +41,7 @@ footer {
     color: #f4f4f4;
     text-align: center;
     padding: 20px 0px;
-    box-shadow: 0px 0px 100px #27a5cca1;
+    box-shadow: 0px 0px 100px #70deffc4, inset 0 0 20px #1a1a1a83;
 }
 
 .brand-container {
@@ -114,7 +114,7 @@ section {
     background: linear-gradient(65deg, #ffffff 50%, #c6f2ff 75%, #ffbddc 85%, hsl(194, 100%, 89%) 95%, #ffffff 100%);
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 50px 15px #ffffff, inset 0 0 30px 7px #ffffffb7;
+    box-shadow: 0 0 40px 15px #ffffff, 0 0 3px 1px #ffffff, inset 0 0 40px 7px #ffffffb7, inset 0 0 9px 3px #ffffffa1;
 }
 
 .grid{
