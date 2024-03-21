@@ -6,3 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.closest('header')) {
+                var dropdown = document.getElementById("dropdown");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
