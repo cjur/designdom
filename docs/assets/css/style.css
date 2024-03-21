@@ -182,13 +182,13 @@ a:hover, a:active{
 }
 
 .collapsible-section .content {
-    max-height: 100px; /* Adjust based on your needs */
+    max-height: 50px; /* Adjust based on your needs */
     overflow: hidden;
-    transition: max-height 1s ease-out;
+    transition: max-height 1s ease;
 }
 
 .collapsible-section.expanded .content {
-    max-height: 2400px; /* Adjust to be higher than the content's full height */
+    max-height: 1200px; /* Adjust to be higher than the content's full height */
 }
 
 .toggle-button{
