@@ -70,7 +70,7 @@ main {
     width: 100%;
 }
 
-button{
+.basebutton{
     background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
     border: none;
     padding: 10px;
@@ -98,9 +98,8 @@ h1, h2, h3 {
 
 h3{
     font-weight:normal;
-    text-decoration: underline;
-    text-decoration-color: #ff76b696;
-    text-decoration-thickness: 5px;
+    padding-bottom: 8px;
+    border-bottom: solid 6px #57d8ff8e;
 }
 section {
     padding: 30px 30px;
@@ -163,10 +162,48 @@ a:hover, a:active{
     display: block;
 }
 
+.whitetextor{
+    background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
+    border: none;
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    color:#ffffff;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: inset 5px 2px 20px 4px #b4edff79, 0 0 30px #ffffff77;
+}
+
 .whitetextor a{
     color: #ffffff;
 }
 
 .whitetextor a:hover{
     color: #c1f1ff;
+}
+
+.collapsible-section .content {
+    max-height: 200px; /* Adjust based on your needs */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.collapsible-section.expanded .content {
+    max-height: 1200px; /* Adjust to be higher than the content's full height */
+}
+
+.toggle-button{
+    background-color: none;
+    background: none;
+    Color: #27a5cc;
+    border: none;
+    padding-top: 30px;
+    position:relative;
+    justify-content: center;
+}
+.toggle-button::after {
+    content: "Expand To See All Content ▼";
+}
+
+.collapsible-section.expanded .toggle-button::after {
+    content: "Shorten Content ▲";
 }
