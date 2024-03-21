@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background: linear-gradient(-80deg,#de498e,  #27a5cc 2%, #59255b 5%, #1a1a1a 50%);
+    background: linear-gradient(-80deg,#ce4384,  #1e7c99 20%, #6e2c70 40%, #1a1a1a 70%);
     color: #f4f4f4;
     padding: 30px 60px;
     display: flex;
@@ -35,7 +35,7 @@ header {
 }
 
 footer {
-    background: linear-gradient(-80deg,#de498e,  #27a5cc 2%, #59255b 5%, #1a1a1a 50%);
+    background: linear-gradient(-80deg,#ce4384,  #1e7c99 20%, #6e2c70 40%, #1a1a1a 70%);
     height: 50px;
     color: #f4f4f4;
     text-align: center;
@@ -189,7 +189,7 @@ a:hover, a:active{
 }
 
 .collapsible-section .content {
-    max-height: 50px; /* Adjust based on your needs */
+    max-height: 55px; /* Adjust based on your needs */
     overflow: hidden;
     transition: max-height 1s ease;
 }
