@@ -1,3 +1,3 @@
-A collection of design assets. Eventually hoping to include downloadable templates and images, links to tutorials / other free work, lists of helpful things, design principals....
+A collection of design resources. Open to anything that contributers can make that helps out other designers or people.
 
-Anyone is welcome to contribute to this page
+Anyone is welcome to contribute to this page.
