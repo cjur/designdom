@@ -36,15 +36,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        const heading = document.getElementById('animated-heading');
-
-        heading.addEventListener('click', () => {
-          // Reset the animation
-          heading.style.animation = 'none';
-          heading.offsetHeight; // Trigger reflow
-          heading.style.animation = null;
-        
-          // Add the animation
-          heading.style.animation = 'slideInOut 2s ease-in-out forwards';
-        });
-        
+        document.querySelectorAll('.animated-heading').forEach((heading) => {
+            let isCooldown = false;
+          
+            const addAnimation = () => {
+              // Apply the animation
+              heading.style.animation = 'slideInOut 2s ease-in-out forwards';
+            };
+          
+            const triggerAnimation = () => {
+              if (!isCooldown) {
+                // Reset the animation
+                heading.style.animation = 'none';
+                heading.offsetHeight; // Trigger reflow
+                
+                // Start the animation
+                addAnimation();
+          
+                // Start cooldown
+                isCooldown = true;
+                setTimeout(() => {
+                  isCooldown = false;
+                }, 3000); // Cooldown period of 3000 milliseconds (3 seconds)
+              }
+            };
+          
+            heading.addEventListener('click', triggerAnimation);
+            heading.addEventListener('mouseenter', () => {
+              if (!isCooldown) {
+                addAnimation();
+              }
+            });
+          
+            heading.addEventListener('animationend', () => {
+              // Reset the animation state at the end to allow for re-hover
+              heading.style.animation = 'none';
+              isCooldown = false;
+            });
+          });
+          
