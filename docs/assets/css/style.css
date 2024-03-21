@@ -1,26 +1,27 @@
 /* Stylesheet-Designdon */
+
+
+
 html,body{
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .content-wrap {
-  min-height: 100%;
-  margin-bottom: -50px;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.content-wrap:after {
-  content: "";
-  display: block;
-  height: 50px;
-}
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: #1a1a1a;
     background-color: #97b5be;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
