@@ -14,9 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdown.classList.toggle("show");
 
             if (dropdown.classList.contains("show")) {
-                menu.src = "assets/images/openmenu.png"; // Image when the menu is open
+                menu.src = "assets/images/inbetweenmenu.png";
+                setTimeout(() => {
+                  menu.src = "assets/images/openmenu.png"; // Image when the menu is open
+              }, 90);
             } else {
-                menu.src = "assets/images/closedmenu.png"; // Image when the menu is closed
+                menu.src = "assets/images/inbetweenmenu.png";
+                setTimeout(() => {
+                  menu.src = "assets/images/closedmenu.png"; // Image when the menu is open
+              }, 90);
             }
         }
 
@@ -30,9 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (dropdown.classList.contains("show")) {
-                menu.src = "assets/images/openmenu.png"; // Image when the menu is open
+                menu.src = "assets/images/openmenu.png";
             } else {
-                menu.src = "assets/images/closedmenu.png"; // Image when the menu is closed
+              menu.src = "assets/images/closedmenu.png";
             }
         }
 
