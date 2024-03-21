@@ -29,23 +29,6 @@
         </div>
     </header>
 
-    <script>
-        function toggleDropdown() {
-            var dropdown = document.getElementById("dropdown");
-            dropdown.classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.closest('header')) {
-                var dropdown = document.getElementById("dropdown");
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-            }
-        }
-    </script>
-
     <div class="grid">
         <section>
             <h2 style="margin:8px">Contribute</h2>
@@ -67,7 +50,8 @@
     
     
 </div> <!--Content Wrap-->
-    
+        <script src="assets/js/script.js"></script>
+
     </main>
 
 
