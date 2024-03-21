@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="assets\images\favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designdom</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+    <main>
+
+    <div class="content-wrap">
+
+    <header onclick="toggleDropdown()">
+        
+        <div class="dropdown" id="dropdown">
+            <div class="dropdown-item"><a href="index.html">Home</a></div>
+            <div class="dropdown-item"><a href="resources.html">Resources</a></div>
+            <div class="dropdown-item"><a href="Othersites.html">Other Sites</a></div>
+            <div class="dropdown-item"><a href="page3.html">Page 3</a></div>
+        </div>
+
+        <div class="brand-container">
+            <img src="assets/images/wordmark.svg" alt="DesignDom Wordmark" class="wordmark">
+            <img src="assets/images/logo.svg" alt="DesignDom Logo" class="logo">
+        </div>
+    </header>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.closest('header')) {
+                var dropdown = document.getElementById("dropdown");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+    <div class="grid">
+        <section>
+            <h2 style="margin:8px">list of helpful sites</h2>
+        </section>
+
+        <section>
+            <h2>Heading</h2>
+            <p>Some text would go here</p>
+            <a href="">Link</a>
+        </section>
+
+        <section>
+            <h2>Heading</h2>
+            <p>Some text would go here</p>
+            <a href="">Link</a>
+        </section>
+
+        <section>
+            <h2>Heading</h2>
+            <p>Some text would go here</p>
+            <a href="">Link</a>
+        </section>
+
+        <section>
+            <h2>Heading</h2>
+            <p>Some text would go here</p>
+            <a href="">Link</a>
+        </section>
+
+        <section>
+            <h2>Heading</h2>
+            <p>Some text would go here</p>
+            <a href="">Link</a>
+        </section>
+
+    </div> <!--Grid-->
+    
+    
+</div> <!--Content Wrap-->
+    
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 DesignDom. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -20,7 +20,7 @@ html,body{
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: #1a1a1a;
-    background-color: #97b5be3a;
+    background-color: #97b5be;
 }
 
 header {
@@ -31,6 +31,15 @@ header {
     justify-content: right;
     cursor: pointer;
     position: relative;
+    box-shadow: 0px 0px 100px #27a5cca1;
+}
+
+footer {
+    background: linear-gradient(-80deg,#de498e,  #27a5cc 2%, #59255b 5%, #1a1a1a 50%);
+    height: 50px;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0px;
     box-shadow: 0px 0px 100px #27a5cca1;
 }
 
@@ -61,12 +70,26 @@ main {
     width: 100%;
 }
 
+button{
+    background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
+    border: none;
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    color:#ffffff;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: inset 5px 2px 20px 4px #b4edff79;
+}
+
 h2 {
     text-transform: uppercase;
     letter-spacing: -2px;
     kerning: normal;
     font-weight:bolder;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: #57d8ff8e;
+    text-decoration-thickness: 10px;
 }
 
 h1, h2, h3 {
@@ -74,15 +97,17 @@ h1, h2, h3 {
 }
 
 h3{
-    font-weight: normal;
+    font-weight:normal;
+    text-decoration: underline;
+    text-decoration-color: #ff76b696;
+    text-decoration-thickness: 5px;
 }
 section {
     padding: 30px 30px;
-    background: linear-gradient(65deg, #ffffff 50%, #9bcfdf80 75%, #f966aa87 85%, #9bcfdf94 100%);
+    background: linear-gradient(65deg, #ffffff 50%, #c6f2ff 75%, #ffbddc 85%, hsl(194, 100%, 89%) 95%, #ffffff 100%);
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 100px #ffffff;
-    box-shadow: inset 0px 0px 30px #ffffff;
+    box-shadow: 0 0 50px 15px #ffffff, inset 0 0 30px 7px #ffffffb7;
 }
 
 .grid{
@@ -90,15 +115,12 @@ section {
     display: flex;
     flex-direction: column;
 }
-
-footer {
-    background: linear-gradient(-80deg,#de498e,  #27a5cc 2%, #59255b 5%, #1a1a1a 50%);
-    height: 50px;
-    color: #f4f4f4;
-    text-align: center;
-    padding: 20px 0px;
-    box-shadow: 0px 0px 100px #27a5cca1;
+.grid2{
+    padding:30px 30px;
+    display: flex;
+    flex-direction: row;
 }
+
 
 a:link, a:visited{
     color: #de498e;
@@ -139,4 +161,12 @@ a:hover, a:active{
 
 .show {
     display: block;
+}
+
+.whitetextor a{
+    color: #ffffff;
+}
+
+.whitetextor a:hover{
+    color: #c1f1ff;
 }
