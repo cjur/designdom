@@ -35,3 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 menu.src = "assets/images/closedmenu.png"; // Image when the menu is closed
             }
         }
+
+        const heading = document.getElementById('animated-heading');
+
+        heading.addEventListener('click', () => {
+          // Reset the animation
+          heading.style.animation = 'none';
+          heading.offsetHeight; // Trigger reflow
+          heading.style.animation = null;
+        
+          // Add the animation
+          heading.style.animation = 'slideInOut 2s ease-in-out forwards';
+        });
+        
