@@ -222,6 +222,8 @@ a:hover, a:active{
     white-space: nowrap;
     min-width: 100px;
     min-height: 50px;
+    max-width: 300px;
+    max-height: 50px;
     transform: translate3d(0, 0, 0);
   }
   
