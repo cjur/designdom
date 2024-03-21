@@ -266,8 +266,8 @@ a:hover, a:active{
   .animated-gradient {
     width: 100%;
     height: 100vh; /* Adjust the height as needed */
-    background: linear-gradient(270deg, #1a1a1a, #27a5cc, #de498e);
+    background: linear-gradient(270deg, #59255b, #27a5cc, #de498e, #ffffff);
     background-size: 400% 400%;
-    animation: gradient-animation 15s ease infinite;
+    animation: gradient-animation 10s ease infinite;
   }
   
