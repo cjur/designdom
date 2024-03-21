@@ -57,6 +57,13 @@ footer {
     display: block;
 }
 
+.menu {
+    height: 50px;
+    width: auto; 
+    display: block;
+    margin-left: 20px;
+}
+
 .wordmark {
     height: 20px;
     width: auto;

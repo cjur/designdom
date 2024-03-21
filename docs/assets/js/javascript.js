@@ -9,7 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function toggleDropdown() {
             var dropdown = document.getElementById("dropdown");
+            var menu = document.getElementById("menu");
+
             dropdown.classList.toggle("show");
+
+            if (dropdown.classList.contains("show")) {
+                menu.src = "assets/images/openmenu.png"; // Image when the menu is open
+            } else {
+                menu.src = "assets/images/closedmenu.png"; // Image when the menu is closed
+            }
         }
 
         // Close the dropdown if the user clicks outside of it
@@ -19,5 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (dropdown.classList.contains('show')) {
                     dropdown.classList.remove('show');
                 }
+            }
+
+            if (dropdown.classList.contains("show")) {
+                menu.src = "assets/images/openmenu.png"; // Image when the menu is open
+            } else {
+                menu.src = "assets/images/closedmenu.png"; // Image when the menu is closed
             }
         }
