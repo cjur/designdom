@@ -215,7 +215,23 @@ a:hover, a:active{
     content: "Shorten Content ▲";
 }
 
-@keyframes slideInOut {
+.heading-container {
+    overflow: hidden;
+    padding: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 100px;
+    min-height: 50px;
+  }
+  
+  .animated-heading {
+    display: inline-block;
+    will-change: transform;
+    cursor: pointer;
+    /* Ensure there's no animation defined here initially */
+  }
+  
+  @keyframes slideInOut {
     0% {
       transform: translateX(0);
     }
@@ -230,21 +246,5 @@ a:hover, a:active{
     100% {
       transform: translateX(0);
     }
-  }
-
-  #heading-container {
-    overflow: hidden;
-    padding: 2px;
-    display: inline-block; /* Adjust the width as necessary, or use another fitting display property */
-    white-space: nowrap; /* Keep the text in a single line */
-  }
-  #animated-heading {
-    display: inline-block;
-    will-change: transform;
-  }
-  
-  #animated-heading:hover,
-  #animated-heading:active {
-    animation: slideInOut 2s ease-in-out forwards;
   }
   
