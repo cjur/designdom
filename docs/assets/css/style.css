@@ -81,7 +81,8 @@ section {
     background: linear-gradient(65deg, #ffffff 50%, #9bcfdf80 75%, #f966aa87 85%, #9bcfdf94 100%);
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 100px #ffffff
+    box-shadow: 0px 0px 100px #ffffff;
+    box-shadow: inset 0px 0px 30px #ffffff;
 }
 
 .grid{
