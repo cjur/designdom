@@ -89,6 +89,18 @@ main {
     box-shadow: inset 5px 2px 20px 4px #b4edff79;
 }
 
+.download{
+    background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
+    border: none;
+    padding: 15px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-shadow: 0 1px 2px #2e3d5a;
+    color:#ffffff;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 5px 2px #faeeff, inset 3px 1px 20px 4px #d7a6ee, 0 3px 15px 1px #4da0d88c, 0 3px 5px 1px #fcf6ff2d, 0 0 3px 2px #ffffff;
+}
+
 h2 {
     text-transform: uppercase;
     letter-spacing: -2px;
