@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (dropdown.classList.contains("show")) {
                 menu.src = "assets/images/inbetweenmenu.png";
                 setTimeout(() => {
-                  menu.src = "assets/images/openmenu.png"; // Image when the menu is open
-              }, 90);
+                  menu.src = "assets/images/openmenu.png"; 
+              }, 120);
             } else {
                 menu.src = "assets/images/inbetweenmenu.png";
                 setTimeout(() => {
-                  menu.src = "assets/images/closedmenu.png"; // Image when the menu is open
-              }, 90);
+                  menu.src = "assets/images/closedmenu.png"; 
+              }, 120);
             }
         }
 
@@ -36,11 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (dropdown.classList.contains("show")) {
-                menu.src = "assets/images/openmenu.png";
+              menu.src = "assets/images/inbetweenmenu.png";
+              setTimeout(() => {
+                menu.src = "assets/images/openmenu.png"; 
+            }, 120);
             } else {
-              menu.src = "assets/images/closedmenu.png";
+                  menu.src = "assets/images/closedmenu.png"; 
             }
-        }
+          }
 
         document.querySelectorAll('.animated-heading').forEach((heading) => {
             let isCooldown = false;
