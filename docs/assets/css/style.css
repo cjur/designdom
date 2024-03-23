@@ -34,31 +34,6 @@ header {
     position: relative;
     box-shadow: 0px 0px 100px #27a5cca1, inset 0 0 20px #1a1a1a83, inset 0 0 40px 10px #1a1a1a;
 }
-
-.shine-effect {
-    position: relative;
-    overflow: hidden;
-  }
-  .shine-effect::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;  /* Start from the left, out of sight */
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(65deg, rgba(255, 255, 255, 0) 10%, rgba(176, 217, 255, 0.575) 50%, rgba(255, 255, 255, 0) 90%);
-    transition: all 9s;
-    mix-blend-mode:overlay; /* Choose a blend mode that suits your design */
-  }
-  @keyframes shine-move {
-    to {
-      left: 100%;
-    }
-  }
-  
-  .shine-effect::before {
-    animation: shine-move 9s infinite;
-  }
   
 footer {
     background: linear-gradient(-80deg,#ce4384,  #1e7c99 20%, #6e2c70 40%, #1a1a1a 86%);
