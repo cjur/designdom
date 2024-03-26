@@ -103,8 +103,17 @@ button{
     text-align: center;
     align-content: center;
     mix-blend-mode: overlay;
-    padding: 12%;
-    text-shadow: 0px 3px 1px #1a1a1a;
+    padding: 15%;
+    text-shadow: 0px 3px 1px #1a1a1a, 0 0 30px #b9b9b9;
+}
+
+.landing h1{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+.landing p{
+    margin-top: -24px;
 }
 
 h2 {
