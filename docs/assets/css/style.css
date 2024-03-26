@@ -173,6 +173,7 @@ a:hover, a:active{
     top: 100%;
     margin-top: 10px;
     border-radius: 7px;
+    border-color: solid 2px #ffffff;
 }
 
 .dropdown a {
