@@ -16,7 +16,7 @@ html,body{
 
 
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Syne', sans-serif;
     color: #1a1a1a;
     background-color: #97b5be;
     display: flex;
@@ -66,11 +66,11 @@ footer {
 }
 
 .wordmark {
-    height: 20px;
+    font-size: 20px;
     width: auto;
     margin-right: 30px;
     display: block;
-
+    align-content: center;
 }
 
 main {
@@ -78,15 +78,8 @@ main {
     width: 100%;
 }
 
-.basebutton{
-    background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
-    border: none;
-    padding: 10px;
-    font-family: Helvetica, Arial, sans-serif;
-    color:#ffffff;
-    border-radius: 6px;
-    margin-top: 20px;
-    box-shadow: inset 5px 2px 20px 4px #b4edff79;
+button{
+    font-family: 'Syne', sans-serif;
 }
 
 .download{
@@ -113,7 +106,7 @@ h2 {
 }
 
 h1, h2, h3 {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Syne', sans-serif;
 }
 
 h3{
@@ -202,22 +195,22 @@ a:hover, a:active{
     display: block;
 }
 
-.whitetextor{
+.base-button{
+    font-family: 'Syne', sans-serif;
     background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
     border: none;
     padding: 10px;
-    font-family: Helvetica, Arial, sans-serif;
     color:#ffffff;
     border-radius: 6px;
     margin-top: 20px;
     box-shadow: inset 5px 2px 20px 4px #b4edff79, 0 0 30px #ffffff77;
 }
 
-.whitetextor a{
+.base-button a{
     color: #ffffff;
 }
 
-.whitetextor a:hover{
+.base-button a:hover{
     color: #c1f1ff;
 }
 
