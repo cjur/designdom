@@ -98,6 +98,15 @@ button{
 
 /* Headings */
 
+.landing {
+    color:#ffffff;
+    text-align: center;
+    align-content: center;
+    mix-blend-mode: overlay;
+    padding: 12%;
+    text-shadow: 0px 3px 1px #1a1a1a;
+}
+
 h2 {
     text-transform: uppercase;
     letter-spacing: -2px;
