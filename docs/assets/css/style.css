@@ -1,6 +1,5 @@
 /* Stylesheet-Designdon */
 
-
 html,body{
     height: 100%;
     margin: 0;
@@ -43,6 +42,17 @@ footer {
     box-shadow: 0px 0px 100px #70deffc4, inset 0 0 20px #1a1a1a83;
 }
 
+main {
+    padding: 0px;
+    width: 100%;
+}
+
+button{
+    font-family: 'Syne', sans-serif;
+}
+
+/* Header stuff to keep everything lined up */
+
 .brand-container {
     display: flex;
     align-items: center;
@@ -72,14 +82,7 @@ footer {
     align-content: center;
 }
 
-main {
-    padding: 0px;
-    width: 100%;
-}
-
-button{
-    font-family: 'Syne', sans-serif;
-}
+/* Download button... (Might want to redesign, a bit too much) */
 
 .download{
     background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
@@ -92,6 +95,8 @@ button{
     border-radius: 30px;
     box-shadow: inset 0px 0px 5px 2px #faeeff, inset 3px 1px 20px 4px #d7a6ee, 0 3px 15px 1px #4da0d88c, 0 3px 5px 1px #fcf6ff2d, 0 0 3px 2px #ffffff;
 }
+
+/* Headings */
 
 h2 {
     text-transform: uppercase;
@@ -113,6 +118,9 @@ h3{
     padding-bottom: 8px;
     border-bottom: solid 6px #57d8ff8e;
 }
+
+/* Sections and grid stuff , links, dropdowns, animation */
+
 section {
     padding: 10px 30px 30px 30px;
     background: linear-gradient(65deg, #ffffff 50%, #c6f2ff 75%, #ffbddc 85%, hsl(194, 100%, 89%) 95%, #ffffff 100%);
