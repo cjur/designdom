@@ -1,7 +1,6 @@
 /* Stylesheet-Designdon */
 
 
-
 html,body{
     height: 100%;
     margin: 0;
@@ -173,7 +172,7 @@ a:hover, a:active{
     top: 100%;
     margin-top: 10px;
     border-radius: 7px;
-    border-color: solid 2px #ffffff;
+    border: solid 2px #ffffff;
 }
 
 .dropdown a {
@@ -181,6 +180,8 @@ a:hover, a:active{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 7px;
+    
 }
 
 .dropdown a:hover {
