@@ -11,36 +11,43 @@ function createLine(parent, top, left, width, height, color) {
 
 function generateGrid() {
     const gridContainer = document.getElementById('grid');
-    const canvas = document.getElementById('grid');
-    const ctx = canvas.getContext('2d');
+    gridContainer.innerHTML = '';
 
-    // Clear the canvas before redrawing
-    canvas.width = gridContainer.offsetWidth; // Set canvas size based on container
-    canvas.height = gridContainer.offsetHeight;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
     // Example: Create a fixed number of boxes
-    for (let i = 0; i < 1; i++) {
-        const box = document.createElement('div');
+    for (let i = 0; i < 30; i++) { // Adjust the number of boxes as needed
+        let box = document.createElement('div');
         box.className = 'grid-box';
         gridContainer.appendChild(box);
-    
-        const spacing = parseInt(document.getElementById('hSpacing').value); // Assuming spacing is the same for horizontal and vertical lines
-        const lineWeight = parseInt(document.getElementById('hLineWeight').value);
-        const lineColor = document.getElementById('hLineColor').value;
-    
-        // Calculate the number of horizontal lines
-        const numLines = Math.floor(canvas.height / spacing);
-    
-        // Draw horizontal lines
-        for (let i = 0; i <= numLines; i++) {
-          const yPosition = i * spacing;
-          ctx.beginPath();
-          ctx.moveTo(0, yPosition);
-          ctx.lineTo(canvas.width, yPosition);
-          ctx.lineWidth = lineWeight; // Set line width
-          ctx.strokeStyle = lineColor; // Set line color
-          ctx.stroke(); // Draw the line
+        
+        // Check each toggle and draw the corresponding grid
+        if (document.getElementById('toggleHorizontal').checked) {
+            const spacing = parseInt(document.getElementById('hSpacing').value);
+            const lineWeight = parseInt(document.getElementById('hLineWeight').value);
+            const lineColor = document.getElementById('hLineColor').value;
+
+            // Calculate the number of lines to draw based on the box height and spacing
+            const numLines = Math.floor(box.offsetHeight / spacing);
+
+            // Draw each line
+            for (let i = 0; i <= numLines; i++) {
+                let yPosition = i * spacing;
+                createLine(box, yPosition, 0, box.offsetWidth, lineWeight, lineColor);
+            }
         }
+
+        if (document.getElementById('toggleVertical').checked) {
+            const spacing = parseInt(document.getElementById('vSpacing').value);
+            const lineWeight = parseInt(document.getElementById('vLineWeight').value);
+            const lineColor = document.getElementById('vLineColor').value;
+
+            const numLines = Math.floor(box.offsetWidth / spacing);
+
+            for (let i = 0; i <= numLines; i++) {
+                let xPosition = i * spacing;
+                createLine(box, 0, xPosition, lineWeight, box.offsetHeight, lineColor);
+            }
+        }
+    }
 }
 
 window.onload = generateGrid;

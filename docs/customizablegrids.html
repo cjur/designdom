@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/stylecgrids.css">
 </head>
 <body>
+    <div class="ui">
     <h1 >Custom Grid Generator</h1>
 
     <!-- Toggles for each grid type -->
@@ -39,22 +40,14 @@
         <label for="vLineColor">Line Color:</label>
         <input type="color" id="vLineColor" value="#000000">
     </div>
-    <div >
-        <h2>Angled Lines</h2>
-        <label for="aSpacing">Spacing:</label>
-        <input type="number" id="aSpacing" value="11">
-        <label for="aLineWeight">Line Weight:</label>
-        <input type="number" id="aLineWeight" value="1">
-        <label for="aLineColor">Line Color:</label>
-        <input type="color" id="aLineColor" value="#000000">
-        <label for="aAngle">Angle (degrees):</label>
-        <input type="number" id="aAngle" value="45">
-    </div>
 
     <!-- Add similar sections for Vertical Lines, Angled Lines, and Circles -->
-
     <button onclick="generateGrid()" >Generate Grid</button>
     <button id="printButton">Print Grid</button>
+    <input value='Print' type='button' onclick='handlePrint()' />
+    </div>
+
+    
 
     <div id="grid"></div>
     
