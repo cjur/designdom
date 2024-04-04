@@ -1,0 +1,33 @@
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Gutters between boxes */
+    width: 8.5in; /* Approximate width for 11in with some scaling down */
+    height: 11in; /* Scale down the 8.5x11 ratio to fit the screen */
+    border: 1px solid #000; /* Border for the grid */
+    padding: 0.5in; /* Padding around the grid */
+}
+
+.grid-box {
+    width: 1.5in; /* Fixed square size */
+    height: 1.5in;
+    position: relative;
+    border: 1px solid #ccc; /* Border for each grid box */
+    overflow: hidden; /* Ensures grid elements don't overflow */
+}
+
+input[type="number"]{
+    width: 50px; /* Width for number inputs */
+}
+
+@media print {
+    .ui{
+        display: none;
+    }
+    .grid-box{
+        display: inline-block;
+    }
+    .lines{
+        display: block;
+    }
+  }
