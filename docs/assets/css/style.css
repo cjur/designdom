@@ -16,30 +16,30 @@ html,body{
 body {
     font-family: 'Syne', sans-serif;
     color: #1a1a1a;
-    background-color: #97b5be;
+    background-color: #bebebe;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(-80deg,#ce4384,  #1e7c99 20%, #6e2c70 40%, #1a1a1a 86%);
+    background: linear-gradient(-80deg,#242424,  #0f0f0f);
     color: #f4f4f4;
     padding: 30px 34px;
     display: flex;
     justify-content: right;
     cursor: pointer;
     position: relative;
-    box-shadow: 0px 0px 100px #27a5cca1, inset 0 0 20px #1a1a1a83, inset 0 0 40px 10px #1a1a1a;
+    box-shadow: 0px 0px 100px #cacacaa1, inset 0 0 20px #1a1a1a83, inset 0 0 40px 10px #1a1a1a;
 }
   
 footer {
-    background: linear-gradient(-80deg,#ce4384,  #1e7c99 20%, #6e2c70 40%, #1a1a1a 86%);
+    background: linear-gradient(-80deg,#242424,  #0f0f0f);
     height: 50px;
     color: #f4f4f4;
     text-align: center;
     padding: 20px 0px;
-    box-shadow: 0px 0px 100px #70deffc4, inset 0 0 20px #1a1a1a83;
+    box-shadow: 0px 0px 100px #cacacaa1, inset 0 0 20px #1a1a1a;
 }
 
 main {
@@ -123,7 +123,7 @@ h2 {
     font-weight:bolder;
     margin-bottom: 40px;
     text-decoration: underline;
-    text-decoration-color: #57d8ff8e;
+    text-decoration-color: #5e5e5e8e;
     text-decoration-thickness: 10px;
 }
 
@@ -134,14 +134,14 @@ h1, h2, h3 {
 h3{
     font-weight:normal;
     padding-bottom: 8px;
-    border-bottom: solid 6px #57d8ff8e;
+    border-bottom: solid 6px #5e5e5e8e;
 }
 
 /* Sections and grid stuff , links, dropdowns, animation */
 
 section {
     padding: 10px 30px 30px 30px;
-    background: linear-gradient(65deg, #ffffff 50%, #c6f2ff 75%, #ffbddc 85%, hsl(194, 100%, 89%) 95%, #ffffff 100%);
+    background: linear-gradient(65deg, #ffffff 50%, #dadada 100%);
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 0 40px 15px #ffffff, 0 0 3px 1px #ffffff, inset 0 0 40px 7px #ffffffb7, inset 0 0 9px 3px #ffffffa1;
@@ -176,18 +176,18 @@ section {
 
 
 a:link, a:visited{
-    color: #de498e;
+    color: #272727;
     text-decoration: none;
 }
 
 a:hover, a:active{
-    color:#59255b
+    color:#333333
 }
 
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #59255b;
+    background-color: #575757;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(26,26,26,0.1);
     z-index: 1;
@@ -212,7 +212,7 @@ a:hover, a:active{
 
 .dropdown-item:hover {
     border-radius: 7px;
-    background: linear-gradient(90deg, #59255b, #de498e);
+    background: linear-gradient(90deg, #535353, #e4e4e4);
 }
 
 .show {
@@ -221,13 +221,12 @@ a:hover, a:active{
 
 .base-button{
     font-family: 'Syne', sans-serif;
-    background: linear-gradient(-50deg, #3f9ebb 2%, #5fd0f3 100%);
+    background: linear-gradient(-50deg, #202020 2%, #535353 100%);
     border: none;
     padding: 10px;
     color:#ffffff;
     border-radius: 6px;
-    margin-top: 20px;
-    box-shadow: inset 5px 2px 20px 4px #b4edff79, 0 0 30px #ffffff77;
+    box-shadow: inset 5px 2px 20px 4px #05050579, 0 0 30px #2e2e2e77;
 }
 
 .base-button a{
@@ -251,7 +250,7 @@ a:hover, a:active{
 .toggle-button{
     background-color: none;
     background: none;
-    Color: #27a5cc;
+    Color: #3d3d3d;
     border: none;
     padding-top: 30px;
     position:relative;
@@ -316,8 +315,18 @@ a:hover, a:active{
   .animated-gradient {
     width: 100%;
     height: 100vh; /* Adjust the height as needed */
-    background: linear-gradient(45deg, #ffffff, #59255b, #27a5cc, #de498e, #59255b, #27a5cc, #de498e,  #59255b, #27a5cc, #de498e, #ffffff);
+    background: linear-gradient(45deg, #ffffff, #555555, #cacaca, #dadada, #4b4b4b, #d3d3d3, #dbdbdb,  #646464, #c5c5c5, #c5c5c5, #ffffff);
     background-size: 400% 400%;
     animation: gradient-animation 12s ease infinite;
   }
   
+  .button{
+    background: #ffffff;
+    padding: 8px  12px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 9px #c7c7c7, inset -2px -4px 15px #e7e7e7;
+  }
+
+  p{
+    margin: 24px 0px 32px;
+  }
